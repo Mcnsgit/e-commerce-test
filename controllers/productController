@@ -1,0 +1,14 @@
+import { find, findById } from '../models/product';
+import { next } from 'process';
+
+// Display list of all products.
+export function product_list(_req, res) {
+    find({}, 'name description price')
+    .exec(function (err, list_products) {
+        if (err) { return next(err); }
+        //Successful, so render
+        res.render('product', { title: 'Product List', product_list: list_products });
+    });
+}
+
+

@@ -1,0 +1,51 @@
+<%- include('partials/header') %> 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">My E-commerce Website</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/views/product.ejs">Products</a>
+					</li>
+					<li class="nav-item">
+						<a href="cart.ejs">Cart</a>					
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/views/checkout.ejs">Checkout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <div class="container">
+		<h1>Welcome to my e-commerce website!</h1>
+		<p>Here you can find a wide variety of products at great prices.</p>
+	</div>
+	<div class="container mt-3">
+		<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+	</div>
+
+	<!-- product Listing -->
+	<div class="container mt-3">
+		<div class="row">
+		<div class="col-sm">
+			<div class="card">
+			<img src="your-product-image-url" class="card-img-top" alt="product Image">
+			<div class="card-body">
+				<h5 class="card-title">product Title</h5>
+				<p class="card-text">product Description</p>
+				<a href="#" class="btn btn-primary">Add to Cart</a>
+			</div>
+			</div>
+		</div>
+		<!-- Add more products here -->
+		</div>
+	</div>
+<%- include('partials/footer') %>

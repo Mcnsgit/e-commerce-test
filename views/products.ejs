@@ -1,0 +1,31 @@
+<%- include('partials/header') %> 
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-3">Products</h1>
+        <div class="row">
+            <% products.forEach(function(product) { %>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="<%= product.image %>" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#"><%= product.name %></a>
+                            </h4>
+                            <h5>$<%= product.price %></h5>
+                            <p class="card-text"><%= product.description %></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <div id="products-container"></div>
+    <script src="products.js"></script>
+    
+</body>
+</html>
+<%- include('partials/footer') %> 

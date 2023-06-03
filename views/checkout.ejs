@@ -1,0 +1,17 @@
+<%- include('header') %>
+
+<h1>Checkout</h1>
+<form action="/checkout" method="post">
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address"><br>
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city"><br>
+    <label for="state">State:</label><br>
+    <input type="text" id="state" name="state"><br>
+    <label for="zip">Zip Code:</label><br>
+    <input type="text" id="zip" name="zip"><br>
+    <input type="submit" value="Submit">
+</form>
+
+<%- include('footer') %>
+
