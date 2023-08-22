@@ -17,7 +17,7 @@
     "express-session": "^1.17.3",
     "get-intrinsic": "^1.2.1",
     "mongodb": "^5.5.0",
-    "mongoose": "^7.2.2",
+    "mongoose": "^7.3.3",
     "nodemailer": "^6.9.3",
     "nodemon": "^2.0.22",
     "passport": "^0.6.0",
